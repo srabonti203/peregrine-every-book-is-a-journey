@@ -40,12 +40,16 @@ const HomePage = async () => {
       <div>
         <FeaturedBooks featuredBooks={featuredBooks}></FeaturedBooks>
       </div>
+
+      {/* popular books */}
       <h2 className="text-center text-2xl font-semibold text-cyan-800">
         Popular Books
       </h2>
       <div>
         <PopularBooks popularBooks={popularBooks}></PopularBooks>
       </div>
+
+      {/* membership section */}
       <div>
         <Membership></Membership>
       </div>

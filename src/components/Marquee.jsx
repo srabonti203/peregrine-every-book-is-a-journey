@@ -9,7 +9,7 @@ const Maequee = ({ books }) => {
       </button>
       <Marquee>
         {books.map((book) => (
-          <span key={book.id} className="mx-3">
+          <span key={book.id} className="mx-2">
             {book.title},
           </span>
         ))}

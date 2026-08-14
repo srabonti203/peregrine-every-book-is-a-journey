@@ -37,7 +37,7 @@ const membershipSteps = [
 
 const Membership = () => {
   return (
-    <div className="shadow-sm rounded-md">
+    <div className="shadow-md rounded-md ">
       <div className="rounded-xl p-8 md:p-10">
         <h2 className="text-2xl font-semibold text-center text-gray-800 mb-10">
           How Membership Works

@@ -5,7 +5,7 @@ import { IoLogoYoutube } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <footer className="w-10/12 mx-auto bg-white rounded-md border-t border-gray-300 shadow-sm p-6">
+    <footer className="w-10/12 mx-auto mb-3 bg-white rounded-md border-t border-gray-300 shadow-sm p-6">
       {/* Top section */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo & tagline */}
@@ -15,31 +15,20 @@ const Footer = () => {
             <span className="text-gray-500 font-medium">Peregrine</span>
           </div>
 
-          <p className="text-sm text-gray-500 mt-2">
-            Every book is a journey
-          </p>
+          <p className="text-sm text-gray-500 mt-2">Every book is a journey</p>
         </div>
 
         {/* Navigation */}
         <div className="flex items-center gap-6 text-sm text-gray-600">
-          <Link
-            href="/all-books"
-            className="hover:text-blue-900 transition"
-          >
+          <Link href="/all-books" className="hover:text-blue-900 transition">
             Browse Books
           </Link>
 
-          <Link
-            href="/contact"
-            className="hover:text-blue-900 transition"
-          >
+          <Link href="/contact" className="hover:text-blue-900 transition">
             Contact Us
           </Link>
 
-          <Link
-            href="/about"
-            className="hover:text-blue-900 transition"
-          >
+          <Link href="/about" className="hover:text-blue-900 transition">
             About
           </Link>
         </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm w-10/12 mx-auto">
+    <div className="navbar bg-slate-100 w-10/12 mx-auto rounded-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,7 +39,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link href={"/"} className="btn btn-ghost text-xl">
+        <Link href={"/"} className="text-xl text-blue-900">
           Peregrine
         </Link>
       </div>

@@ -23,7 +23,7 @@ const Category = async ({ params }) => {
       {/* right sidebar */}
       <div className="col-span-6 flex flex-col items-center">
         <h2 className="text-lg text-center font-medium">All Books</h2>
-        <RightSidebar books={books}></RightSidebar>
+        <RightSidebar activeId={id} books={books}></RightSidebar>
       </div>
     </div>
   );

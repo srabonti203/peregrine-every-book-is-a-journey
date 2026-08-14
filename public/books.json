@@ -1,0 +1,206 @@
+[
+  {
+    "id": "001",
+    "title": "The Silent River",
+    "author": "Elena Morris",
+    "description": "The Silent River follows Clara Bennett, a young woman who returns to the small town where she grew up after receiving an unexpected letter from an old family friend. While exploring the places connected to her childhood, Clara discovers a collection of letters hidden inside an abandoned house beside the river. The letters reveal a forgotten story involving friendship, sacrifice, loss, and a secret that has remained hidden for decades. As Clara investigates the truth, she begins to understand how the choices made by previous generations have shaped her own life. The story explores memory, family, forgiveness, and the courage required to confront painful parts of the past.",
+    "category_id": "01",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/V0dqW2gW/71-SOo-Wrg-YL-AC-UF1000-1000-QL80.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": "002",
+    "title": "Letters from Yesterday",
+    "author": "Daniel Carter",
+    "description": "Letters from Yesterday tells the story of two strangers whose lives become connected through a collection of letters written more than fifty years ago. Daniel discovers the letters inside an old bookstore and becomes fascinated by the relationship between the people who wrote them. His investigation eventually leads him to Margaret, an elderly woman who remembers the people mentioned in the letters. Together they uncover a forgotten story about love, difficult decisions, missed opportunities, and hope. As the mystery unfolds, Daniel learns that the past can influence the present in unexpected ways and that understanding old stories can sometimes help people understand their own lives.",
+    "category_id": "01",
+    "available_quantity": 3,
+    "image_url": "https://i.ibb.co.com/JjmZx3H2/images.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": "003",
+    "title": "The Last Lighthouse",
+    "author": "Sophia Bennett",
+    "description": "The Last Lighthouse follows Thomas Reed, a lighthouse keeper who has spent most of his life watching over a dangerous stretch of coastline. During one particularly violent storm, a mysterious ship appears near the rocks despite warnings that no vessel should be traveling through the area. Thomas soon discovers that the ship is carrying people who are connected to an event from his past. Torn between following his duty and protecting those who have arrived, he must make a decision that could change the rest of his life. The story explores courage, responsibility, regret, and the possibility of finding redemption after years of silence.",
+    "category_id": "01",
+    "available_quantity": 7,
+    "image_url": "https://i.ibb.co.com/Lz45b5MP/The-Lastlighthouse-Cover.webp",
+    "rating": 4.7
+  },
+  {
+    "id": "004",
+    "title": "Echoes of the Forest",
+    "author": "Michael Anderson",
+    "description": "Echoes of the Forest follows a traveler who enters a remote forest while searching for a missing friend. As he moves deeper into the wilderness, he discovers abandoned buildings, strange markings, and objects that appear to be connected to his own childhood. Every discovery forces him to question what he remembers and what he may have forgotten. The forest becomes more than a physical place as the traveler confronts his fears and regrets. The story combines mystery and emotional drama while exploring memory, identity, friendship, and the difficult process of accepting the past.",
+    "category_id": "01",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/R4kHsf1C/images-1.jpg",
+    "rating": 4.4
+  },
+
+  {
+    "id": "005",
+    "title": "The Future of Artificial Intelligence",
+    "author": "James Wilson",
+    "description": "The Future of Artificial Intelligence introduces readers to the rapidly developing world of intelligent machines and examines how artificial intelligence is changing modern society. The book explains machine learning, neural networks, natural language processing, computer vision, and generative AI using accessible examples. It also discusses the potential effects of AI on education, employment, creativity, healthcare, privacy, and human decision-making. Rather than presenting technology as either completely beneficial or dangerous, the author encourages readers to think critically about responsible development and the role humans should play as intelligent systems become increasingly capable.",
+    "category_id": "02",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/MDZJSS96/71qb-JGFNs-HL-AC-UF1000-1000-QL80.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": "006",
+    "title": "Modern Web Development",
+    "author": "Ryan Mitchell",
+    "description": "Modern Web Development is a practical introduction to the technologies used to build contemporary websites and web applications. Starting with HTML, CSS, and JavaScript, the book gradually introduces frameworks, APIs, databases, authentication, responsive design, performance optimization, and deployment. Readers learn how the different layers of a web application communicate and how developers can create applications that are secure, maintainable, and scalable. The book also discusses accessibility and user experience, helping readers understand that good web development is not only about writing code but also about creating useful and reliable experiences for real users.",
+    "category_id": "02",
+    "available_quantity": 8,
+    "image_url": "https://i.ibb.co.com/MDbKJFPM/images-2.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": "007",
+    "title": "Understanding Cybersecurity",
+    "author": "Oliver Hayes",
+    "description": "Understanding Cybersecurity provides an introduction to the principles that protect computers, networks, applications, and personal information from digital threats. The book explains common security concepts including passwords, authentication, encryption, phishing, malware, network security, and data protection. It also discusses how organizations respond to security incidents and why cybersecurity has become important for individuals as well as businesses. Through practical examples, readers learn how simple mistakes can create security risks and how responsible technology users can develop better habits for protecting their digital identities and information.",
+    "category_id": "02",
+    "available_quantity": 2,
+    "image_url": "https://i.ibb.co.com/8DCwSvMN/images-3.jpg",
+    "rating": 4.3
+  },
+  {
+    "id": "008",
+    "title": "The World of Robotics",
+    "author": "Emma Richardson",
+    "description": "The World of Robotics explores how engineers and computer scientists create machines capable of sensing their environments, making decisions, and performing physical tasks. The book introduces robotics concepts including sensors, motors, computer vision, artificial intelligence, automation, and human-robot interaction. It examines the use of robots in manufacturing, healthcare, exploration, agriculture, and everyday life. The author also discusses the ethical questions surrounding automation and considers how robotics may influence employment and society in the coming decades. Readers are encouraged to think about both the possibilities and responsibilities associated with increasingly capable machines.",
+    "category_id": "02",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/HRHNNVQ/a-world-of-robots.webp",
+    "rating": 4.5
+  },
+
+  {
+    "id": "009",
+    "title": "A Journey Through Space",
+    "author": "Dr. Nathan Brooks",
+    "description": "A Journey Through Space takes readers on an exploration of the universe, beginning with our solar system and continuing toward distant stars, galaxies, nebulae, and black holes. The book explains how stars are born and die, how planets form, and how scientists investigate the origins of the universe. It also introduces the history of human space exploration and examines the technology used to study distant worlds. The author discusses the possibility of life beyond Earth and considers what future missions might teach humanity about our place in the universe. The book combines scientific explanations with a sense of wonder about the enormous cosmos surrounding our planet.",
+    "category_id": "03",
+    "available_quantity": 9,
+    "image_url": "https://i.ibb.co.com/qF4XBn4B/9781529381979.jpg",
+    "rating": 4.9
+  },
+  {
+    "id": "010",
+    "title": "The Hidden World of Biology",
+    "author": "Dr. Sarah Collins",
+    "description": "The Hidden World of Biology introduces readers to the complex biological systems that exist inside and around living organisms. The book explores cells, DNA, microorganisms, genetics, evolution, and the interactions between organisms and their environments. It explains how seemingly simple biological processes combine to create the incredible diversity of life found on Earth. The author also examines modern discoveries in biotechnology and genetics and discusses their potential effects on medicine, agriculture, and human health. Written for curious readers, the book makes complex scientific ideas easier to understand while showing how much remains to be discovered about life.",
+    "category_id": "03",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/zhCVC6b2/images-4.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": "011",
+    "title": "The Science of the Human Mind",
+    "author": "Dr. Olivia Parker",
+    "description": "The Science of the Human Mind explores the biological and psychological processes that allow people to think, remember, learn, communicate, and make decisions. The book introduces readers to the structure of the brain and explains how different regions contribute to perception, memory, emotions, and behavior. It also discusses sleep, learning, stress, and the relationship between the brain and the environment. By combining scientific research with everyday examples, the author demonstrates how much of human behavior is influenced by complex interactions between biology and experience. The book encourages readers to look at their own minds with greater curiosity and appreciation.",
+    "category_id": "03",
+    "available_quantity": 3,
+    "image_url": "https://i.ibb.co.com/BHxBP9C8/Weighing-The-Planets-1984-edited.avif",
+    "rating": 4.7
+  },
+  {
+    "id": "012",
+    "title": "Climate and Our Planet",
+    "author": "Dr. Robert Evans",
+    "description": "Climate and Our Planet examines the scientific systems that control Earth's climate and explains how human activity is influencing those systems. The book discusses greenhouse gases, rising temperatures, melting ice, changing weather patterns, ocean systems, and biodiversity. It also explores the scientific methods researchers use to understand climate change and predict possible future scenarios. Rather than focusing only on the problems, the author examines potential solutions involving renewable energy, conservation, technology, policy, and changes in everyday behavior. The book helps readers understand why climate change is a complex scientific and social challenge that requires cooperation across countries and generations.",
+    "category_id": "03",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/y1y1PR5/images-5.jpg",
+    "rating": 4.4
+  },
+
+  {
+    "id": "013",
+    "title": "The Philosophy of Everyday Life",
+    "author": "Adrian Cole",
+    "description": "The Philosophy of Everyday Life explores philosophical questions that appear in ordinary human experiences. Instead of focusing only on difficult philosophical theories, the book asks simple but profound questions about happiness, freedom, responsibility, identity, morality, friendship, and the meaning of a good life. Each chapter connects philosophical ideas with situations that people encounter in their daily lives. The author introduces ideas from ancient and modern philosophers while encouraging readers to question assumptions they may have accepted without thinking. The book ultimately presents philosophy not as something limited to universities but as a way of examining how we live and why we make the choices we make.",
+    "category_id": "04",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/fLMwDPk/51-Wr-MZ19-OOL-SL500.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": "014",
+    "title": "The Search for Meaning",
+    "author": "Arthur Bennett",
+    "description": "The Search for Meaning examines one of the oldest questions in philosophy: how should a person live a meaningful life? The book explores different philosophical traditions and compares their ideas about happiness, suffering, freedom, purpose, and human responsibility. It considers how people respond to uncertainty and why individuals often search for meaning even when life does not provide simple answers. Through philosophical arguments and examples from ordinary life, the author encourages readers to develop their own understanding rather than accepting a single definition of meaning. The book is designed to encourage reflection and thoughtful conversation about the values that guide human existence.",
+    "category_id": "04",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/BKLhMyxN/mini-magick20190322-25550-8o44s.png",
+    "rating": 4.7
+  },
+  {
+    "id": "015",
+    "title": "Freedom and Responsibility",
+    "author": "Marcus Reed",
+    "description": "Freedom and Responsibility investigates the relationship between personal freedom and the consequences of human choices. The author asks whether people can truly be free if their decisions are influenced by society, biology, culture, and circumstances beyond their control. The book introduces several philosophical perspectives on free will and responsibility and connects these ideas with everyday decisions involving relationships, work, morality, and social behavior. Rather than providing easy answers, the author encourages readers to examine the assumptions behind their beliefs and consider how accepting responsibility can influence the way people live and interact with others.",
+    "category_id": "04",
+    "available_quantity": 3,
+    "image_url": "https://i.ibb.co.com/1G10HwtY/41-X5pn2j-C6-L-SL500.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": "016",
+    "title": "The Wisdom of Doubt",
+    "author": "Nathan Ellis",
+    "description": "The Wisdom of Doubt explores the idea that questioning our beliefs can be an important part of intellectual growth. The book examines how people form opinions, why individuals become attached to certain ideas, and how social environments influence what people consider to be true. Drawing from philosophical traditions centered on skepticism and critical thinking, the author argues that uncertainty does not necessarily represent weakness. Instead, recognizing what we do not know can encourage curiosity and deeper understanding. The book invites readers to approach difficult questions with humility and to develop the habit of examining evidence before reaching conclusions.",
+    "category_id": "04",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/PvqFTNzX/images-6.jpg",
+    "rating": 4.6
+  },
+
+  {
+    "id": "017",
+    "title": "Echoes of Ancient Civilizations",
+    "author": "Michael Harrison",
+    "description": "Echoes of Ancient Civilizations explores the rise and development of some of the world's earliest societies, including civilizations in Mesopotamia, Egypt, Greece, Rome, Asia, and the Americas. Instead of focusing only on rulers and wars, the book examines the everyday lives of ordinary people, including their homes, education, religious beliefs, trade, technology, art, and social structures. It also investigates how ancient inventions and ideas continue to influence modern society. By connecting archaeological discoveries with historical evidence, the author presents history as an ongoing conversation between the past and the present and shows how understanding earlier civilizations can help us understand modern society.",
+    "category_id": "05",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/FkngfJKj/91-Qao-7c8-L-UF1000-1000-QL80.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": "018",
+    "title": "The Rise and Fall of Empires",
+    "author": "William Turner",
+    "description": "The Rise and Fall of Empires examines why powerful civilizations grow, reach periods of prosperity, experience conflict, and eventually transform or disappear. The book compares several major empires throughout history and considers the influence of leadership, economics, military power, geography, culture, and social inequality. Rather than presenting history as a simple sequence of victories and defeats, the author explores the complicated combination of factors that shape political societies. Readers are encouraged to recognize patterns across different periods and understand that historical change is rarely caused by one event. The book provides a broad perspective on how power has shaped human civilization.",
+    "category_id": "05",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/nstjdfgz/61-ip-j9s1-L-AC-UF1000-1000-QL80.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": "019",
+    "title": "Voices from the Past",
+    "author": "Rebecca Adams",
+    "description": "Voices from the Past brings together stories of ordinary people who lived through important historical periods. Instead of focusing exclusively on famous leaders, the book examines letters, diaries, interviews, photographs, and personal records to understand how major events affected everyday life. Readers discover how families experienced war, migration, economic hardship, social change, and political transformation. The author emphasizes that history is not only created by people whose names appear in textbooks but also by millions of ordinary individuals whose experiences shape communities and cultures. The book provides a personal and human perspective on historical events that can sometimes feel distant and abstract.",
+    "category_id": "05",
+    "available_quantity": 7,
+    "image_url": "https://i.ibb.co.com/V7wpBwf/81ck86x-Cn-VL-AC-UF1000-1000-QL80.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": "020",
+    "title": "The Changing World",
+    "author": "James Anderson",
+    "description": "The Changing World explores major transformations in human society from the industrial revolution to the digital age. The book examines how technology, transportation, communication, education, medicine, and economic systems have changed the way people live and work. It also considers the social consequences of these changes and how societies respond when traditional ways of life are challenged by new ideas and technologies. By connecting historical events with developments in the modern world, the author demonstrates that many of the challenges people face today have roots in decisions and transformations that occurred decades or centuries earlier.",
+    "category_id": "05",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/84jjKhyt/71-KRKhej-Vb-L.jpg",
+    "rating": 4.5
+  }
+]

@@ -12,3 +12,4 @@ export const fetchBookDetail = async (id) => {
   const selectedBook = books.find((book) => book.id == id);
   return selectedBook;
 };
+ 

@@ -28,7 +28,7 @@ const FeaturedBookCard = ({ book }) => {
           </span>
         </div>
         <div className="card-actions justify-end">
-          <Link href={"/"}>
+          <Link href={`/books/${book.id}`}>
             <button className="btn bg-blue-900 text-white rounded-md">
               See Detail
             </button>

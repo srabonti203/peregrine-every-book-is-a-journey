@@ -2,9 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 const LeftSidebar = ({ bookCategories, activeId }) => {
-//   console.log(bookCategories);
+  //   console.log(bookCategories);
   return (
-    <div className="flex flex-col container">
+    <div className="flex flex-col container mt-3">
       {bookCategories.map((category) => (
         <Link
           href={`/all-books/${category.category_id}`}

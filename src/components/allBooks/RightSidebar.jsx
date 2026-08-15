@@ -1,13 +1,12 @@
-import React from "react";
-import RightSideBookCard from "./RightSideBookCard";
+import FeaturedBookCard from "../homepage/FeaturedBookCard";
 
 const RightSidebar = ({ books, activeId }) => {
   const filteredBooks = books.filter((book) => book.category_id == activeId);
   // console.log(filteredBooks);
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-3 mt-5">
       {filteredBooks.map((book) => (
-        <RightSideBookCard key={book.id}></RightSideBookCard>
+        <FeaturedBookCard key={book.id} book={book}></FeaturedBookCard>
       ))}
     </div>
   );

@@ -39,7 +39,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link href={"/"} className="text-xl text-blue-900">
+        <Link href={"/"} className="text-xl text-blue-900 font-bold">
           Peregrine
         </Link>
       </div>

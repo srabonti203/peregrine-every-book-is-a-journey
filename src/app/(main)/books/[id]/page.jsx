@@ -1,6 +1,7 @@
 import Borrowbtn from "@/components/Borrowbtn";
 import { fetchBookDetail } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { toast } from "react-toastify";
@@ -65,6 +66,9 @@ const BookDetail = async ({ params }) => {
 
           {/* Button */}
           <div className="card-actions justify-end mt-6">
+            <Link href={`/all-books/${selectedBook.category_id}`} className="btn bg-blue-100 rounded-md">
+              All Books in This Category
+            </Link>
             <Borrowbtn selectedBook={selectedBook}></Borrowbtn>
           </div>
         </div>

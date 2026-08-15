@@ -24,7 +24,7 @@ const HomePage = async () => {
     <div className="w-10/12 mx-auto space-y-10 my-5">
       <Maequee books={books}></Maequee>
       {/* banner */}
-      <div className="flex flex-col items-center justify-center w-10/12 mx-auto min-h-[30vh] bg-slate-50 rounded-md">
+      <div className="flex flex-col items-center justify-center w-10/12 mx-auto min-h-[30vh] bg-slate-50 rounded-md shadow-sm">
         <h2 className="animate__animated animate__fadeInDown text-5xl font-medium text-cyan-800">
           Find Your Next Read
         </h2>

@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 import { authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
-  const { data: session, isPending, error } = authClient.useSession();
+  const { data: session, isPending } = authClient.useSession();
   // const user = session.user;
   // console.log(user);
   // console.log(session, isPending, error);

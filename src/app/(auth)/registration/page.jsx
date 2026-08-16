@@ -99,7 +99,7 @@ const RegistrationPage = () => {
               className="input container"
               placeholder="Enter image URL here"
             />
-            {errors.email && (
+            {errors.photo && (
               <span className="text-red-600">{errors.email.message}</span>
             )}
           </fieldset>

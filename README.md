@@ -10,8 +10,11 @@ Peregrine is a modern book borrowing and library management web application buil
 
 ## 🌐 Live URL
 
-**Live Website:**
-https://your-project-name.vercel.app
+**Live Website:**  
+https://peregrine-every-book-is-a-journey.vercel.app/
+
+**GitHub Repository:**  
+https://github.com/srabonti203/peregrine-every-book-is-a-journey
 
 ---
 
@@ -183,13 +186,13 @@ The application separates book browsing functionality from user authentication a
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/srabonti203/peregrine-every-book-is-a-journey.git
 ```
 
 ### 2. Go to the project directory
 
 ```bash
-cd your-project-name
+cd peregrine-every-book-is-a-journey
 ```
 
 ### 3. Install dependencies
@@ -247,7 +250,10 @@ npm start
 
 ## ☁️ Deployment
 
-The project can be deployed using **Vercel**.
+The project is deployed using **Vercel**.
+
+**Live Website:**  
+https://peregrine-every-book-is-a-journey.vercel.app/
 
 Before deploying, make sure the required environment variables are added to the Vercel project settings.
 
@@ -278,6 +284,12 @@ Peregrine demonstrates practical implementation of:
 **Peregrine — Book Borrowing Platform**
 
 Built as a modern web application using Next.js, React, MongoDB, and Better Auth.
+
+**GitHub:**  
+https://github.com/srabonti203/peregrine-every-book-is-a-journey
+
+**Live Demo:**  
+https://peregrine-every-book-is-a-journey.vercel.app/
 
 ---
 

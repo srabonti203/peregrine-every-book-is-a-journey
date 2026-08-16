@@ -24,7 +24,7 @@ const Footer = () => {
             Browse Books
           </Link>
 
-          <Link href="/contact" className="hover:text-blue-900 transition">
+          <Link href="/" className="hover:text-blue-900 transition">
             Contact Us
           </Link>
 

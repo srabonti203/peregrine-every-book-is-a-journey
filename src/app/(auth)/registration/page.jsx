@@ -1,12 +1,14 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const RegistrationPage = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   const router = useRouter();
   const {
     register,
@@ -96,27 +98,39 @@ const RegistrationPage = () => {
 
           {/* password */}
           <fieldset className="fieldset">
-            <label className="label text-lg font-medium" htmlFor="name">
+            <label className="label text-lg font-medium" htmlFor="password">
               Password
             </label>
-            <input
-              {...register("password", {
-                required: "This field is required",
-                minLength: {
-                  value: 8,
-                  message: "Password must be at least 8 characters",
-                },
-                pattern: {
-                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).+$/,
-                  message:
-                    "Password must contain lowercase,uppercase,numbers and special characters",
-                },
-              })}
-              type="password"
-              id="password"
-              className="input container"
-              placeholder="Enter your password"
-            />
+
+            <div className="relative">
+              <input
+                {...register("password", {
+                  required: "This field is required",
+                  minLength: {
+                    value: 8,
+                    message: "Password must be at least 8 characters",
+                  },
+                  pattern: {
+                    value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).+$/,
+                    message:
+                      "Password must contain lowercase,uppercase,numbers and special characters",
+                  },
+                })}
+                type={showPassword ? "text" : "password"}
+                id="password"
+                className="input w-full pr-10"
+                placeholder="Enter your password"
+              />
+
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-lg"
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
+
             {errors.password && (
               <span className="text-red-600">{errors.password.message}</span>
             )}

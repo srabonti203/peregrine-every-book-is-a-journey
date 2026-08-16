@@ -2,11 +2,14 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 const LoginPage = () => {
+  const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
   const {
     register,
@@ -33,9 +36,16 @@ const LoginPage = () => {
     }
   };
 
+  const handleGoogleSignin = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+    console.log(data);
+  };
+
   return (
     <div className="min-h-[80vh] container mx-auto  my-10 flex items-center justify-center">
-      <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm">
+      <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm flex flex-col gap-3">
         <h2 className="text-2xl font-semibold text-center">
           Login your account
         </h2>
@@ -57,29 +67,42 @@ const LoginPage = () => {
               <span className="text-red-600">{errors.email.message}</span>
             )}
           </fieldset>
+
           {/* password */}
           <fieldset className="fieldset">
-            <label className="label text-lg font-medium" htmlFor="name">
+            <label className="label text-lg font-medium" htmlFor="password">
               Password
             </label>
-            <input
-              {...register("password", {
-                required: "This field is required",
-                minLength: {
-                  value: 8,
-                  message: "Password must be at least 8 characters",
-                },
-                pattern: {
-                  value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).+$/,
-                  message:
-                    "Password must contain lowercase,uppercase,numbers and special characters",
-                },
-              })}
-              type="password"
-              id="password"
-              className="input container"
-              placeholder="Enter your password"
-            />
+
+            <div className="relative">
+              <input
+                {...register("password", {
+                  required: "This field is required",
+                  minLength: {
+                    value: 8,
+                    message: "Password must be at least 8 characters",
+                  },
+                  pattern: {
+                    value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).+$/,
+                    message:
+                      "Password must contain lowercase,uppercase,numbers and special characters",
+                  },
+                })}
+                type={showPassword ? "text" : "password"}
+                id="password"
+                className="input w-full pr-10"
+                placeholder="Enter your password"
+              />
+
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-lg"
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
+
             {errors.password && (
               <span className="text-red-600">{errors.password.message}</span>
             )}
@@ -93,10 +116,16 @@ const LoginPage = () => {
           <p className="text-center mt-4">
             Dont have an account?
             <Link className="p-2 text-red-500" href={"/registration"}>
-              Register
+              Creat Account
             </Link>
           </p>
         </form>
+        <button
+          onClick={handleGoogleSignin}
+          className="btn text-blue-950 bg-blue-100"
+        >
+          <FcGoogle /> Login with google
+        </button>
       </div>
     </div>
   );

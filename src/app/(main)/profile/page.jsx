@@ -7,6 +7,17 @@ import React from "react";
 const ProfilePage = () => {
   const { data: session, isPending } = authClient.useSession();
   // console.log(session);
+
+  if (isPending) {
+    return (
+      <div className="flex items-center justify-center text-2xl font-bold min-h-screen">
+        Loading...
+      </div>
+    );
+  }
+
+  if (!session) return null;
+
   const user = session?.user;
   console.log(user);
   return (

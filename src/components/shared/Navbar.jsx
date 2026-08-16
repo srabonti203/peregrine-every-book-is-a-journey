@@ -3,8 +3,10 @@ import Link from "next/link";
 import React from "react";
 import NavLink from "./NavLink";
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const { data: session, isPending } = authClient.useSession();
   // const user = session.user;
   // console.log(user);
@@ -63,12 +65,15 @@ const Navbar = () => {
             </p>
             <button
               className="btn rounded-full bg-blue-900 text-white"
-              onClick={async () => await authClient.signOut()}
+              onClick={async () => {
+                await authClient.signOut();
+                router.replace("/login");
+              }}
             >
               Logout
             </button>
           </div>
-        ) : ( 
+        ) : (
           <Link
             href={"/login"}
             className="btn rounded-full bg-blue-900 text-white"

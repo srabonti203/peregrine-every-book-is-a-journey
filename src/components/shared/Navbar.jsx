@@ -1,8 +1,15 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import NavLink from "./NavLink";
+import { authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
+  const { data: session, isPending, error } = authClient.useSession();
+  // const user = session.user;
+  // console.log(user);
+  // console.log(session, isPending, error);
+
   const links = (
     <>
       <NavLink href={"/"}>Home</NavLink>
@@ -47,9 +54,28 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Link href={"/login"} className="btn rounded-full">
-          Login
-        </Link>
+        {isPending ? (
+          <div>loading</div>
+        ) : session ? (
+          <div className="flex items-center gap-2">
+            <p className="text-blue-900 font-medium">
+              Welcome! {session.user.name}
+            </p>
+            <button
+              className="btn rounded-full bg-blue-900 text-white"
+              onClick={async () => await authClient.signOut()}
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <Link
+            href={"/login"}
+            className="btn rounded-full bg-blue-900 text-white"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -1,9 +1,13 @@
 "use client";
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const RegistrationPage = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -11,15 +15,31 @@ const RegistrationPage = () => {
     formState: { errors },
   } = useForm();
 
-  const handleLogin = (data) => {
+  const handleLogin = async (data) => {
     const { name, email, photo, password } = data;
     // console.log(name, email, photo, password);
+    const { data: res, error } = await authClient.signUp.email({
+      name: name, // required
+      email: email, // required
+      password: password, // required
+      image: photo,
+      callbackURL: "/",
+    });
+
+    console.log(res, error);
+    if (error) {
+      toast.error(error.message);
+    }
+    if (res) {
+      toast.success("Registered successfully");
+      router.push("/login");
+    }
   };
   return (
     <div className="min-h-[80vh] container mx-auto  my-10 flex items-center justify-center">
       <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm">
         <h2 className="text-2xl font-semibold text-center">
-          Login your account
+          Register your account
         </h2>
         <div className="divider"></div>
         <form onSubmit={handleSubmit(handleLogin)}>

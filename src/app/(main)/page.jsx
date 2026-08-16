@@ -1,7 +1,7 @@
 import Maequee from "@/components/Marquee";
 import Link from "next/link";
 import "animate.css";
-import { fetchBooks } from "@/lib/data";
+import { fetchBooks } from "../../lib/data";
 import FeaturedBooks from "@/components/homepage/FeaturedBooks";
 import PopularBooks from "@/components/homepage/PopularBooks";
 import Membership from "@/components/homepage/Membership";

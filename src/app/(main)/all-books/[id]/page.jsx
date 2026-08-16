@@ -1,6 +1,6 @@
 import BookBrowser from "@/components/allBooks/BookBrowser";
 
-import { fetchBookCategory, fetchBooks } from "@/lib/data";
+import { fetchBookCategory, fetchBooks } from "../../../../lib/data";
 import React from "react";
 
 const Category = async ({ params }) => {

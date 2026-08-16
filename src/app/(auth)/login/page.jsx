@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 const LoginPage = () => {
@@ -36,16 +35,9 @@ const LoginPage = () => {
     }
   };
 
-  const handleGoogleSignin = async () => {
-    const data = await authClient.signIn.social({
-      provider: "google",
-    });
-    console.log(data);
-  };
-
   return (
     <div className="min-h-[80vh] container mx-auto  my-10 flex items-center justify-center">
-      <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm flex flex-col gap-3">
+      <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm">
         <h2 className="text-2xl font-semibold text-center">
           Login your account
         </h2>
@@ -120,12 +112,6 @@ const LoginPage = () => {
             </Link>
           </p>
         </form>
-        <button
-          onClick={handleGoogleSignin}
-          className="btn text-blue-950 bg-blue-100"
-        >
-          <FcGoogle /> Login with google
-        </button>
       </div>
     </div>
   );

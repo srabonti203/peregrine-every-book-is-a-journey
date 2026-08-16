@@ -1,9 +1,11 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 const RegistrationPage = () => {
@@ -37,9 +39,15 @@ const RegistrationPage = () => {
       router.push("/login");
     }
   };
+  const handleGoogleSignin = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+    console.log(data);
+  };
   return (
     <div className="min-h-[80vh] container mx-auto  my-10 flex items-center justify-center">
-      <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm">
+      <div className="p-8 bg-white w-8/12 rounded-lg shadow-sm flex flex-col gap-3">
         <h2 className="text-2xl font-semibold text-center">
           Register your account
         </h2>
@@ -141,6 +149,20 @@ const RegistrationPage = () => {
             Register
           </button>
         </form>
+        {/* dont have login? */}
+        <p className="text-center mt-3">
+          Aready registered?
+          <Link className="p-2 text-red-500" href={"/login"}>
+            Login
+          </Link>
+        </p>
+        <p className="text-center">or</p>
+        <button
+          onClick={handleGoogleSignin}
+          className="btn text-blue-950 bg-blue-100"
+        >
+          <FcGoogle /> Login with google
+        </button>
       </div>
     </div>
   );
